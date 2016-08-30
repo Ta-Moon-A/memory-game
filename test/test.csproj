@@ -68,11 +68,15 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\app.component.js" />
+    <Content Include="app\app.module.js" />
+    <Content Include="app\app.routes.js" />
     <Content Include="app\form samples\data-driven-form.component.js" />
     <Content Include="app\form samples\form-sample.routes.js" />
     <Content Include="app\form samples\template-driven-form.component.js" />
     <Content Include="app\http sample\http-sample.component.js" />
     <Content Include="app\http sample\myHttpService.service.js" />
+    <Content Include="app\main.js" />
     <Content Include="app\memory game\card.component.js" />
     <Content Include="app\memory game\cardItem.js" />
     <Content Include="app\memory game\sharedService.js" />
@@ -102,6 +106,7 @@
     <Content Include="images\gameBack.jpg" />
     <Content Include="images\plain-blue.jpg" />
     <Content Include="index.html" />
+    <Content Include="node_modules\%40angular\platform-browser-dynamic\bundles\platform-browser-dynamic.umd.js" />
     <Content Include="node_modules\bootstrap\dist\css\bootstrap.css" />
     <Content Include="node_modules\core-js\client\shim.min.js" />
     <Content Include="node_modules\reflect-metadata\Reflect.js" />
