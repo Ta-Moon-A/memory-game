@@ -10,14 +10,15 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require("@angular/core");
 var router_1 = require('@angular/router');
+var game_component_1 = require("./memory game/game.component");
 var AppComponent = (function () {
     function AppComponent() {
     }
     AppComponent = __decorate([
         core_1.Component({
             selector: "my-app",
-            template: "  <nav>\n                    <a [routerLink]=\"['/GameComponent']\">Memory Game</a> |\n                    <a [routerLink]=\"['/Puzzle']\">Puzzle</a> |\n                    <a [routerLink]=\"['/ShoppingList']\">Shopping List</a> |\n                    <a [routerLink]=\"['/HttpSampleComponent']\">Http Sample | </a>\n                    <a [routerLink]=\"['/DirectivesSample']\">Directives Sample</a> |\n                    <a [routerLink]=\"['/TemplateDrivenForm']\">Template Driven Form</a> |\n                    <a [routerLink]=\"['/DataDrivenForm']\">Data Driven Form</a> |\n                  </nav>\n                    <br><br>\n                 <router-outlet></router-outlet>\n              ",
-            directives: [router_1.ROUTER_DIRECTIVES]
+            template: " \n                    <br><br>\n                 <router-outlet></router-outlet>\n              ",
+            directives: [router_1.ROUTER_DIRECTIVES, game_component_1.GameComponent]
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);
