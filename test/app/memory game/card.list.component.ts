@@ -96,7 +96,7 @@ export class CardListComponent implements OnInit {
         }, 500);
     }
 
-    onResetClicked() {
+    onResetClicked() { //123
         this.cardList = [];
         this.timer = 0;
         this.gameSolved = false;
