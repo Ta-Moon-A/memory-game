@@ -1,0 +1,36 @@
+﻿<section class="setup">
+    <h2> Game Setup</h2>
+    Enter your name please :
+    <input type="text" #name (keyup)="0">
+</section>
+<section [ngClass]="{
+                            puzzle : true,
+                            solved : switch1.value == Switch1Number &&
+                                     switch2.value == Switch2Number &&
+                                     switch3.value == Switch3Number &&
+                                     switch4.value == Switch4Number
+                         }"
+         [ngStyle]="{display : name.value ==='' ? 'none' : 'block' }">
+
+    <h2>
+        The Puzzle {{
+switch1.value == Switch1Number &&
+                                         switch2.value == Switch2Number &&
+                                         switch3.value == Switch3Number &&
+                                         switch4.value == Switch4Number ? 'Solved' : 'NotSolved'
+        }}
+    </h2>
+    Ok, welcome <span class="name">{{name.value}}</span><br><br>
+    Switch 1:
+    <input type="text" #switch1 (keyup)="0"><br>
+    Switch 2:
+    <input type="text" #switch2 (keyup)="0"><br>
+    Switch 3:
+    <input type="text" #switch3 (keyup)="0"><br>
+    Switch 4:
+    <input type="text" #switch4 (keyup)="0"><br>
+</section>
+<h2 [hidden]="switch1.value != Switch1Number || switch2.value != Switch2Number ||
+                                  switch3.value != Switch3Number || switch4.value != Switch4Number">
+    Congartulations {{name.value}}, you did it !
+</h2>
