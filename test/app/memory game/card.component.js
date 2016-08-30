@@ -16,7 +16,7 @@ var CardComponent = (function () {
         this.cardBackPicUrl = "";
     }
     CardComponent.prototype.ngOnInit = function () {
-        this.cardBackPicUrl = '../images/cardBack/' + this.selectedCard.cardPoint + '.png';
+        this.cardBackPicUrl = 'https://nagasaki1991.github.io/memory-game/test/images/cardBack/' + this.selectedCard.cardPoint + '.png';
     };
     CardComponent.prototype.onCardClick = function () {
         this.selectedCard.isOpen = !this.selectedCard.isOpen;
