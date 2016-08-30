@@ -35,7 +35,7 @@ var CardComponent = (function () {
                     })),
                     core_2.state('close', core_2.style({
                         transform: 'rotateY(180deg)',
-                        backgroundImage: 'url(../images/Card_back.png)',
+                        backgroundImage: 'url(https://nagasaki1991.github.io/memory-game/test/images/Card_back.png)',
                     })),
                     core_2.transition('open => close', core_2.animate('200ms ease')),
                     core_2.transition('close => open', core_2.animate('500ms ease'))

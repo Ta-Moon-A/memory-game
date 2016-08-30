@@ -36,7 +36,7 @@ import {Input, trigger, state, style, transition, animate} from '@angular/core';
             })),
             state('close', style({
                 transform: 'rotateY(180deg)',
-                backgroundImage: 'url(../images/Card_back.png)',
+                backgroundImage: 'url(https://nagasaki1991.github.io/memory-game/test/images/Card_back.png)',
             })),
             transition('open => close', animate('200ms ease')),
             transition('close => open', animate('500ms ease'))
