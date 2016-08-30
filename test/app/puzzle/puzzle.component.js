@@ -22,7 +22,7 @@ var PuzzleComponent = (function () {
     PuzzleComponent = __decorate([
         core_1.Component({
             selector: "my-puzzle",
-            templateUrl: "../templates/puzzle.html"
+            template: ""
         }), 
         __metadata('design:paramtypes', [])
     ], PuzzleComponent);

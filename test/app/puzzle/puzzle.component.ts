@@ -3,7 +3,7 @@ import {OnInit} from "@angular/core";
 
 @Component({
     selector: "my-puzzle",
-    templateUrl: "../templates/puzzle.html"
+    template: ""
 
 })
 
