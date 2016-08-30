@@ -51,7 +51,7 @@ export class CardComponent implements OnInit {
     cardBackPicUrl: string = "";
 
     ngOnInit(): any {
-        this.cardBackPicUrl = '../images/cardBack/' + this.selectedCard.cardPoint + '.png';
+        this.cardBackPicUrl = 'https://nagasaki1991.github.io/memory-game/test/images/cardBack/' + this.selectedCard.cardPoint + '.png';
     }
 
     onCardClick() {
