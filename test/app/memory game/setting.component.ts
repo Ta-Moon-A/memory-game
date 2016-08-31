@@ -5,15 +5,17 @@ import {GameProperties} from "./gameProp";
 @Component({
     selector: "setting",
     template: `<div class="mgMainBoard">
-                  <div class="mgTitle">Memory Game !</div><br>
-                  <div>
+                <div class="mgTitle">Memory Game !</div><br>
+                <div class="settingBoard">
+                  <br>
+                  <div class="settingElement">
                      <label class="settingLabel">Dimension</label>
                      <select class="form-control settingParamSelect" [ngModel]="gameProperties.dimension" (change)="onDimensionChange($event.target.value)">
                        <option value="1">3x4</option>
                        <option value="2">4x5</option>
                      </select>
                   </div>
-                  <div>
+                  <div class="settingElement">
                      <label class="settingLabel">Type</label>
                      <select class="form-control settingParamSelect" [ngModel]="gameProperties.type" (change)="onTypeChange($event.target.value)">
                        <option value="1">Numbers</option>
@@ -25,6 +27,7 @@ import {GameProperties} from "./gameProp";
                   <div class="settingFooter">
                     <button class="settingBtn btn btn-mg" type="button" (click)="onStartGameClick()">Start</button>
                   </div>
+                </div>
              </div>`,
     outputs: ['gameStartClicked'],
 })
