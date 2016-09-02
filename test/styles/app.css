@@ -5,7 +5,7 @@ body {
     font-size: 16px;
     background-image: url(https://nagasaki1991.github.io/memory-game/test/images/plain-blue.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 100% 100%;
 }
 
 .setup, .puzzle {
